@@ -1,0 +1,47 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+@theme {
+  --font-serif: "Libre Baskerville", serif;
+  --font-sans: "Inter", sans-serif;
+  
+  --color-meridian-black: #07080A;
+  --color-meridian-deep: #0A0C10;
+  --color-meridian-rail: #08090C;
+  --color-meridian-text: #E4E3E0;
+  --color-meridian-gold: #C5A059;
+  --color-meridian-input: #0E1014;
+  --color-meridian-border: rgba(255, 255, 255, 0.05);
+}
+
+body {
+  @apply bg-meridian-black text-meridian-text font-sans antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-serif;
+}
+
+.form-input {
+  @apply w-full bg-meridian-input border border-white/10 rounded-lg p-4 text-sm font-light text-white/80 focus:outline-none focus:border-meridian-gold/50 transition-colors;
+}
+
+.form-label {
+  @apply text-[11px] uppercase tracking-widest text-white/50 block mb-2;
+}
+
+.btn-primary {
+  @apply px-10 py-4 bg-meridian-gold text-meridian-black text-xs font-bold uppercase tracking-[0.2em] rounded-sm hover:brightness-110 transition-all;
+}
+
+.btn-secondary {
+  @apply px-10 py-4 border border-white/10 text-white/60 text-xs font-bold uppercase tracking-[0.2em] rounded-sm hover:bg-white/5 hover:text-white transition-all;
+}
+
+.context-rail-item {
+  @apply flex items-center gap-4 transition-opacity duration-500;
+}
+
+.context-rail-dot {
+  @apply w-2 h-2 rounded-full;
+}

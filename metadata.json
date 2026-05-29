@@ -1,0 +1,11 @@
+{
+  "name": "Meridian",
+  "description": "A deep, intentional relationship compatibility platform focusing on values and worldview over superficial swiping.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
